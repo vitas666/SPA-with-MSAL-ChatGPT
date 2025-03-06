@@ -38,5 +38,4 @@ curl -k -X GET \
 
 TODO: azure的新的任務，去使用azure想辦法呼叫，打chatGPT 4o的API
 AWS的之後也去試試
-Azure url: https://vitas-m7viocp8-eastus2.cognitiveservices.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2025-01-01-preview
-api_key: 864HXGx892NdVu196eSHZTDNAfDLYogNaJQfdZWSpPBvGyOhQnOlJQQJ99BCACHYHv6XJ3w3AAAAACOGRuAM
+
