@@ -1,0 +1,42 @@
+From now on, I want to add a note in every single project to record how I can design a system to make sure I am following the correct way to write the code.
+
+lab-react-design: the simple way is to demo a login button, when click the button, trigger sso sign in function, open MSAL
+1: make a simple button on layout.tsx
+2: figure out to add a function to have a MSAL function inside
+
+alternative solution: copy the EIP frontend project and delete the Giant verification, simplily login with personal MSAL
+alternative solution: copy microsoft demo code
+
+next stage: try to use the chatbot api on this project
+1: after logged in, put a button for user, when onclick, trigger chatbot api
+2: when click send, authencate the user
+3: if authencate success, call the API of chatbot
+4: should get the response after calling the api
+
+Amplience design: 
+1: get the url, open the url and get the response by content delivery API(done)
+2: get the response json string try to get the image, set up the module in backend(done)
+3: using Amplience visualization sdk to render the page
+
+chatbot section: need to find
+1: conversation_id (由uuid產生)
+2: group_id (由userinfo API取得)
+3: model_id (由llms API獲得)
+4: API key = 'zv9lMX/Gk2O+gzaw2bAgwctEaAXrpYFS/0znbcIuf3o='
+5: chat url = 'https://s-chatbot-adminapi.giantcycling.com'
+
+
+curl -k -X GET \
+-H "accept: application/json" \
+-H "Authorization: Bearer zv9lMX/Gk2O+gzaw2bAgwctEaAXrpYFS/0znbcIuf3o=" \
+"https://s-chatbot-adminapi.giantcycling.com/userinfo"
+
+curl -k -X GET \
+-H "accept: application/json" \
+"$URL/llms?group_id=0718a6a020f64e27b20a5b210e5ca3c0"
+
+
+TODO: azure的新的任務，去使用azure想辦法呼叫，打chatGPT 4o的API
+AWS的之後也去試試
+Azure url: https://vitas-m7viocp8-eastus2.cognitiveservices.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2025-01-01-preview
+api_key: 864HXGx892NdVu196eSHZTDNAfDLYogNaJQfdZWSpPBvGyOhQnOlJQQJ99BCACHYHv6XJ3w3AAAAACOGRuAM

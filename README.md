@@ -1,1 +1,0 @@
-# SPA-with-MSAL-ChatGPT
