@@ -7,8 +7,8 @@ import { LogLevel, Configuration, PublicClientApplication } from "@azure/msal-br
  */
 export const msalConfig: Configuration = {
     auth: {
-        clientId: "51451f72-1f39-458d-b506-e8d8a263ddf9",
-        authority: "https://login.microsoftonline.com/4d7304c5-dd9d-46df-9b60-7b0f1a164fce", // Replace the placeholder with your tenant subdomain 
+        clientId: "",
+        authority: "", // Replace the placeholder with your tenant subdomain 
         redirectUri: "http://localhost:3000/redirect", // Must be registered in Microsoft Entra admin center
         postLogoutRedirectUri: "/", // Page to navigate after logout
         navigateToLoginRequestUrl: false,
