@@ -22,7 +22,7 @@ chatbot section: need to find
 1: conversation_id (由uuid產生)
 2: group_id (由userinfo API取得)
 3: model_id (由llms API獲得)
-4: API key = 'zv9lMX/Gk2O+gzaw2bAgwctEaAXrpYFS/0znbcIuf3o='
+4: API key = ''
 5: chat url = 'https://s-chatbot-adminapi.giantcycling.com'
 
 
